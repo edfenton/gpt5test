@@ -1,0 +1,10 @@
+---
+description: maintain smooth 60 fps on a normal laptop in chrome/edge
+globs:
+alwaysApply: true
+---
+
+- aim for a steady 60 fps.
+- if frame time rises, optimize before adding features.
+- avoid per-frame allocations and unnecessary re-renders.
+- use requestAnimationFrame for drawing and keep work per frame minimal.

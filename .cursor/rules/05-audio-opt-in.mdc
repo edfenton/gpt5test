@@ -1,0 +1,10 @@
+---
+description: collision click and motor hum must be off until user interaction
+globs:
+alwaysApply: true
+---
+
+- do not play any audio until after the first user interaction (click or key press).
+- provide toggles for collision sounds and motor hum, plus a master mute.
+- if the browser blocks autoplay, show a small “click to enable sound” hint.
+- keep default levels comfortable; avoid sudden loud peaks.

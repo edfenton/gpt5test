@@ -1,0 +1,10 @@
+---
+description: apply all parameter changes at runtime without page reloads
+globs:
+alwaysApply: true
+---
+
+- apply control changes live while the simulation runs.
+- do not reload the page or remount the app to apply changes.
+- when a change requires rebuilding objects, pause → rebuild safely → restore state → resume within the same frame.
+- never call window.location.reload for configuration changes.

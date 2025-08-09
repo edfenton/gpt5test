@@ -1,0 +1,10 @@
+---
+description: use the web audio api for collision clicks and motor hum sounds
+globs:
+alwaysApply: true
+---
+
+- generate and control all sounds with the web audio api.
+- synthesize a short click for collisions and a soft hum for the motor.
+- respect the rule that no audio plays until after user interaction.
+- connect sound on/off toggles directly to audio context nodes.

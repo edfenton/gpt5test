@@ -1,0 +1,10 @@
+---
+description: build with react + typescript and run entirely in the browser
+globs:
+alwaysApply: true
+---
+
+- use react + typescript with vite.
+- do not add servers, apis, or backend code (no express, no node http endpoints, no websocket servers).
+- avoid dependencies that require node-only apis.
+- if a server is suggested, refuse and keep the solution client-side.

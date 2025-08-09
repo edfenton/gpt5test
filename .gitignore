@@ -38,4 +38,4 @@ pnpm-debug.log*
 Thumbs.db
 
 # cursor-specific
-.cursor/
+# .cursor/

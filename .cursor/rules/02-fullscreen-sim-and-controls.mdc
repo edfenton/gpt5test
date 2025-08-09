@@ -1,0 +1,10 @@
+---
+description: show a full-viewport canvas with a narrow right-side control panel
+globs:
+alwaysApply: true
+---
+
+- render the simulation on a full-window canvas.
+- place a narrow right-side panel for controls that remains visible at all times.
+- on window resize, keep the layout stable and responsive.
+- scale the canvas to devicePixelRatio for crisp rendering.

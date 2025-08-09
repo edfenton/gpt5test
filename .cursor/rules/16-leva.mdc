@@ -1,0 +1,10 @@
+---
+description: use leva to build the live control panel for simulation settings
+globs:
+alwaysApply: true
+---
+
+- build the control panel with leva in react.
+- bind sliders, toggles, and selectors directly to simulation variables.
+- ensure changes in leva controls apply instantly without reloads.
+- group related controls logically (e.g., physics, audio, display).

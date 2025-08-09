@@ -1,0 +1,11 @@
+---
+description: use gpt-5 for all actions and never auto-route or downshift
+globs:
+alwaysApply: true
+---
+
+- use gpt-5 (or gpt-5 thinking if explicitly requested) for all chats, edits, and code generations in this project.
+- do not auto-route, ensemble, or switch models. never downshift to smaller/older models.
+- if the environment attempts to switch models, explicitly switch back to gpt-5 and continue without redoing previous steps.
+- if gpt-5 is unavailable, stop and ask for direction instead of choosing another model.
+- in new threads, restate: “use gpt-5 only for this project.”
