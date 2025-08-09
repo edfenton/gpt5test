@@ -1,0 +1,18 @@
+{
+    // formatting
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // linting
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+
+    // typescript
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.tsdk": "node_modules/typescript/lib",
+
+    // general editor feel
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  }
