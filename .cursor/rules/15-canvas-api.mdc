@@ -1,0 +1,10 @@
+---
+description: use the html5 canvas api to draw and update the simulation graphics
+globs:
+alwaysApply: true
+---
+
+- render the polygon, ball, and debug overlay on an html5 canvas.
+- use 2d context transforms for rotation, scaling, and positioning.
+- keep drawing code efficient to maintain 60 fps.
+- clear and redraw the scene every frame.

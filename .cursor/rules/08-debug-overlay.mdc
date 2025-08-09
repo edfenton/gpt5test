@@ -1,0 +1,9 @@
+---
+description: include a minimal debug overlay that can be toggled
+globs:
+alwaysApply: true
+---
+
+- show a tiny overlay with fps and basic stats.
+- add a ui toggle and a keyboard shortcut (e.g., “d”) to show/hide it.
+- the overlay must not meaningfully impact performance.

@@ -1,0 +1,10 @@
+---
+description: use vite for project tooling, bundling, and dev server
+globs:
+alwaysApply: true
+---
+
+- scaffold and run the project with vite for react + typescript.
+- use vite’s dev server for local development.
+- configure vite for fast refresh and path aliases.
+- do not replace vite with webpack, parcel, or other bundlers.

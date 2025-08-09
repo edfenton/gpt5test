@@ -1,0 +1,9 @@
+---
+description: support desktop chrome and edge only; no mobile
+globs:
+alwaysApply: true
+---
+
+- support desktop chrome and edge.
+- explicitly do not support mobile.
+- if a mobile device is detected, show a polite “desktop only” message and do not initialize the simulation.

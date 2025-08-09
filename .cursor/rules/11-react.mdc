@@ -1,0 +1,10 @@
+---
+description: use react for all ui components and structure
+globs:
+alwaysApply: true
+---
+
+- build all ui with react functional components and hooks.
+- no class components, jquery, or non-react dom manipulation.
+- manage state with react hooks or context where needed.
+- all controls, overlays, and panels must be react components.

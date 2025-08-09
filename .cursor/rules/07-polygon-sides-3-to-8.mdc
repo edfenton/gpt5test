@@ -1,0 +1,9 @@
+---
+description: default square; allow sides from triangle (3) to octagon (8)
+globs:
+alwaysApply: true
+---
+
+- default container shape is a square.
+- allow selecting 3–8 sides.
+- changing sides must be safe and seamless during the simulation (no glitches, no state loss).

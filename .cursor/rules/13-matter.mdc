@@ -1,0 +1,9 @@
+---
+description: use matter.js for all physics, collisions, and gravity in the simulation
+globs:
+alwaysApply: true
+---
+
+- handle all physics with matter.js, including motion, rotation, collisions, and gravity.
+- use matter.js bodies for the polygon walls and the ball.
+- adjust properties (friction, restitution, gravity) via matter.js APIs, not custom math.

@@ -1,0 +1,10 @@
+---
+description: expose a gravity strength control with an earth-like default
+globs:
+alwaysApply: true
+---
+
+- include a gravity slider.
+- default feels like earth (label as 1g).
+- allow 0g to 2g.
+- gravity changes must take effect instantly without destabilizing the simulation.
