@@ -1,8 +1,0 @@
-{
-    "recommendations": [
-      "dsznajder.es7-react-js-snippets",    // ES7+ React/Redux snippets
-      "esbenp.prettier-vscode",             // Prettier code formatter
-      "dbaeumer.vscode-eslint",             // ESLint integration
-      "christian-kohler.path-intellisense"  // Auto-complete file paths
-    ]
-  }
