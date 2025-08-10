@@ -1,35 +1,69 @@
-# Rotating polygon physics simulation
+# React + TypeScript + Vite
 
-A browser-based physics toy built with React, TypeScript, Vite, Matter.js, Canvas 2D, Leva, and the Web Audio API.  
-The simulation shows a ball bouncing inside a rotating polygon with fully adjustable parameters and live updates.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
+Currently, two official plugins are available:
 
-- Change polygon sides (3–8) in real time
-- Control rotation direction and speed
-- Adjust wall slipperiness/stickiness
-- Change ball size and bounciness
-- Live gravity control (0g to 2g, default Earth gravity)
-- Toggle collision click sounds and motor hum
-- Tiny debug overlay with FPS and basic stats
-- Smooth 60 FPS target on desktop Chrome/Edge
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠 Tech stack
+## Expanding the ESLint configuration
 
-- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/) for tooling and dev server
-- [Matter.js](https://brm.io/matter-js/) for physics
-- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) for rendering
-- [Leva](https://leva.pm/) for the live control panel
-- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for sound effects
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## 🚀 Getting started
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-**Prerequisites**
-- [Node.js](https://nodejs.org/) 18 or higher
-- [npm](https://www.npmjs.com/) (bundled with Node) or [pnpm](https://pnpm.io/) / [yarn](https://yarnpkg.com/)
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-**Clone the repo**
-```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

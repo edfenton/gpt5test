@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.canvas-container {
+  flex: 1;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.canvas-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.control-panel {
+  width: 300px;
+  background: #2a2a2a;
+  border-left: 1px solid #444;
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.control-panel h3 {
+  margin-bottom: 15px;
+  color: #4a9eff;
+}
+
+.control-panel p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.control-group select {
+  width: 100%;
+  padding: 8px;
+  background: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.control-group select:focus {
+  outline: none;
+  border-color: #4a9eff;
+}
